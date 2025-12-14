@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('Satoshi-Light.woff2') format('woff2'),
+        url('Satoshi-Light.woff') format('woff'),
+        url('Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('Satoshi-Medium.woff2') format('woff2'),
+        url('Satoshi-Medium.woff') format('woff'),
+        url('Satoshi-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('Satoshi-Bold.woff2') format('woff2'),
+        url('Satoshi-Bold.woff') format('woff'),
+        url('Satoshi-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Ramillas Trl';
+    src: url('TTRamillasTrl-Medium.woff2') format('woff2'),
+        url('TTRamillasTrl-Medium.woff') format('woff'),
+        url('TTRamillasTrl-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('Satoshi-Regular.woff2') format('woff2'),
+        url('Satoshi-Regular.woff') format('woff'),
+        url('Satoshi-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Ramillas Trl';
+    src: url('TTRamillasTrl-Regular.woff2') format('woff2'),
+        url('TTRamillasTrl-Regular.woff') format('woff'),
+        url('TTRamillasTrl-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Ramillas Trl';
+    src: url('TTRamillasTrl-Bold.woff2') format('woff2'),
+        url('TTRamillasTrl-Bold.woff') format('woff'),
+        url('TTRamillasTrl-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
