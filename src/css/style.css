@@ -1600,6 +1600,10 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
 .section-gallery .gallery-inner .item {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  overflow: hidden;
+}
+.section-gallery .gallery-inner .item img {
+  max-width: 100%;
 }
 .section-gallery .gallery-owl-carousel .owl-item {
   opacity: 0.5;

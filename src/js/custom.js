@@ -124,6 +124,47 @@ $(document).ready(function () {
         }
     });
 
+    // Gallery Carousel
+    $('.gallery-owl-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        dots: false,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        smartSpeed: 1500,
+        navText: [
+            '<img src="./img/icons/left-arrow.svg" class="owl-custom-prev" alt="Previous">',
+            '<img src="./img/icons/right-arrow.svg" class="owl-custom-next" alt="Next">'
+        ],
+        responsive: {
+            0: {
+                items: 1.2,
+                margin: 15,
+                center: true
+            },
+            575: {
+                items: 1.5,
+                margin: 20,
+                center: true
+            },
+            767: {
+                items: 2.2,
+                margin: 20
+            },
+            992: {
+                items: 2.5,
+                margin: 25
+            },
+            1200: {
+                items: 2.5,
+                margin: 30
+            }
+        }
+    });
+
     // Products Carousel
     $('.products-owl-carousel').owlCarousel({
         loop: false,

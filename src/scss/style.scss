@@ -1698,6 +1698,10 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
     .item {
       border: 1px solid rgba(0, 0, 0, 0.2);
       border-radius: 15px;
+      overflow: hidden;
+      img{
+        max-width: 100%;
+      }
       .client-card {
         .client-header { }
         .client-review { }
