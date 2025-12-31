@@ -314,21 +314,21 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
   align-items: center;
   position: relative;
   z-index: 1000;
-  padding: 13px 15px;
+  padding: 5px 15px;
 }
 .top-navbar .web-navbar .logo img {
-  width: 140px;
+  width: 130px;
   height: auto;
 }
 @media only screen and (max-width: 767px) {
   .top-navbar .web-navbar .logo img {
-    width: 116px;
+    width: 115px;
   }
 }
 .top-navbar .web-navbar .nav-links {
   display: flex;
   align-items: center;
-  gap: 42px;
+  gap: 52px;
   margin-left: auto;
   margin-right: 42px;
   transition: all 0.4s ease;
@@ -359,6 +359,11 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
 .top-navbar .web-navbar .nav-links .web-menus:hover {
   color: #D8CBB8;
   opacity: 0.8;
+}
+@media only screen and (min-width: 768px) {
+  .top-navbar .web-navbar .nav-links .web-menus.active {
+    border-bottom: 1px solid #D8CBB8;
+  }
 }
 .top-navbar .web-navbar .nav-links .menu-contact {
   display: none;
@@ -394,7 +399,7 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
   display: inline-block;
   border: none;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.2px;
   text-decoration: none;
@@ -424,7 +429,7 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .top-navbar .web-navbar .nav-links {
-    gap: 15px;
+    gap: 20px;
     margin-right: 15px;
   }
 }
@@ -444,7 +449,7 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
     height: 0;
     transition: height 0.5s ease-in-out;
     z-index: 999;
-    margin-top: 80px;
+    margin-top: 109px;
     width: 100%;
     margin-left: 0;
     gap: 0;
@@ -459,7 +464,7 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
   .top-navbar .web-navbar .nav-links.active {
-    height: calc(100svh - 80px);
+    height: calc(100svh - 109px);
   }
   .top-navbar .web-navbar .nav-links.active .web-menus {
     opacity: 1;
@@ -521,7 +526,7 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
 }
 .section-home-banner .banner-wrapper::before {
   position: absolute;
-  content: "";
+  content: none;
   width: 1px;
   height: 100%;
   left: 50%;
@@ -549,9 +554,6 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
 }
 .section-home-banner .banner-block.banner-left {
   background-image: url("../img/banner/chai-nimki-small-banner.webp");
-}
-.section-home-banner .banner-block.banner-right {
-  background-image: url("../img/banner/nasto-by-tukkas-small-banner.webp");
 }
 .section-home-banner .banner-block {
   background-size: cover;
@@ -581,7 +583,7 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
   transition: transform 0.5s ease;
 }
 .section-home-banner .banner-block .banner-content img {
-  max-width: 180px;
+  max-width: 380px;
   margin-bottom: 15px;
   transition: transform 0.5s ease;
 }
@@ -607,7 +609,8 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
     font-size: 2rem;
   }
   .section-home-banner .banner-block .banner-content img {
-    max-width: 120px;
+    max-width: 180px;
+    margin-bottom: 0;
   }
 }
 
@@ -683,6 +686,11 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
   align-items: center;
   transition: transform 0.5s ease;
 }
+@media only screen and (max-width: 767px) {
+  .section-home-banner-inner .banner-block .banner-content {
+    margin-top: 30px;
+  }
+}
 .section-home-banner-inner .banner-block .banner-content img {
   max-width: 180px;
   margin-bottom: 15px;
@@ -721,6 +729,47 @@ h1, h2, h3, h4, h5, h6, li, a, p, ol, ul {
 
 /*-- Home Banner End --*/
 /*-- Home About Start --*/
+.section-home-about .home-about-right {
+  position: relative;
+  border-radius: 15px;
+}
+.section-home-about .home-about-right img {
+  border-radius: 15px;
+}
+.section-home-about .home-about-right .fssai {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 150px;
+  border-radius: 15px;
+  background: #fff;
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.section-home-about .home-about-right .fssai img {
+  border-radius: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .section-home-about .home-about-right .fssai {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    height: max-content;
+  }
+}
+.section-home-about .home-about-right:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.45) 60%, rgba(154, 33, 41, 0.2) 100%);
+  transition: background 0.5s ease;
+  z-index: 1;
+  border-radius: 15px;
+}
 @media only screen and (max-width: 575px) {
   .section-home-about .home-about-right {
     margin-top: 30px;
